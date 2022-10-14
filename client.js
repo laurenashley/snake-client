@@ -20,6 +20,9 @@ const connect = () => {
 
   conn.on('connect', () => {
     conn.write('Move: up');
+    setInterval(() => {
+      conn.write('Move: up');
+    }, 50);
   });
 
   conn.on('data', data => {
