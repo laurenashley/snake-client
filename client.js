@@ -1,6 +1,6 @@
 // client.js
 
-const net = require("net");
+const net = require('net');
 
 // establishes a connection with the game server
 const connect = () => {
@@ -10,7 +10,7 @@ const connect = () => {
   });
 
   // interpret incoming data as text
-  conn.setEncoding("utf8");
+  conn.setEncoding('utf8');
 
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
