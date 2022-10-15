@@ -17,6 +17,7 @@ const setupInput = (conn) => {
 const handleUserInput = (data) => {
   switch (data) {
   case '\u0003':
+    // ctrl + c
     process.exit();
     break;
   case 'w':
@@ -30,6 +31,12 @@ const handleUserInput = (data) => {
     break;
   case 'd':
     connection.write('Move: right');
+    break;
+  case 'h':
+    connection.write('Say: hiya m8s!');
+    break;
+  case 'm':
+    connection.write('Say: move out the way!');
     break;
   }
 };
