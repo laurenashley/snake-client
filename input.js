@@ -1,5 +1,7 @@
 // input.js
 
+const { KEY_MOVEMENTS, KEY_MESSAGES } = require("./constants");
+
 // Stores the active TCP connection object.
 let connection;
 
@@ -21,22 +23,22 @@ const handleUserInput = (data) => {
     process.exit();
     break;
   case 'w':
-    connection.write('Move: up');
+    connection.write(KEY_MOVEMENTS.MOVE_UP);
     break;
   case 'a':
-    connection.write('Move: left');
+    connection.write(KEY_MOVEMENTS.MOVE_LEFT);
     break;
   case 's':
-    connection.write('Move: down');
+    connection.write(KEY_MOVEMENTS.MOVE_DOWN);
     break;
   case 'd':
-    connection.write('Move: right');
+    connection.write(KEY_MOVEMENTS.MOVE_RIGHT);
     break;
   case 'h':
-    connection.write('Say: hiya m8s!');
+    connection.write(KEY_MESSAGES.SAY_HI);
     break;
   case 'm':
-    connection.write('Say: move out the way!');
+    connection.write(KEY_MESSAGES.SAY_MOVE);
     break;
   }
 };
