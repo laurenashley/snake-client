@@ -1,6 +1,6 @@
 // input.js
 
-const { KEY_MOVEMENTS, KEY_MESSAGES } = require("./constants");
+const { KEY_MOVEMENTS, KEY_MESSAGES } = require('./constants');
 
 // Stores the active TCP connection object.
 let connection;

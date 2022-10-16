@@ -18,4 +18,4 @@ module.exports = {
   PORT,
   KEY_MOVEMENTS,
   KEY_MESSAGES
-}
+};
